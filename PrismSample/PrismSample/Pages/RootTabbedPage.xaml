@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="PrismSample.Pages.RootTabbedPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pages="clr-namespace:PrismSample.Pages;assembly=PrismSample"
+    mc:Ignorable="d"
+    NavigationPage.HasNavigationBar="False">
+    <!--  Pages can be added as references or inline  -->
+    <NavigationPage Title="Master">
+        <x:Arguments>
+            <pages:MyMasterPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Page 1">
+        <x:Arguments>
+            <pages:Page1 />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Page 2">
+        <x:Arguments>
+            <pages:Page2 />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Page 3">
+        <x:Arguments>
+            <pages:Page3 />
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

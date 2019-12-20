@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PrismSample.Pages.Page5"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mvvm="http://prismlibrary.com"
+    mc:Ignorable="d"
+    mvvm:ViewModelLocator.AutowireViewModel="True"
+    NavigationPage.HasNavigationBar="False"
+    BackgroundColor="DarkCyan">
+    <ContentPage.Content>
+        <StackLayout
+            Spacing="20"
+            Padding="50"
+            VerticalOptions="Center">
+            <Label
+                Text="Page 5"
+                FontSize="Large"
+                TextColor="White"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Start" />
+            <Button
+                Text="Go to Page 6"
+                Command="{Binding NavigateCommand}"
+                FontSize="Large"
+                BackgroundColor="Red"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Start" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

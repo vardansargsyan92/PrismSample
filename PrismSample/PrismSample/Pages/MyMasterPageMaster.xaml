@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PrismSample.Pages.MyMasterPageMaster"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mvvm="http://prismlibrary.com"
+    x:Name="This"
+    mc:Ignorable="d"
+    mvvm:ViewModelLocator.AutowireViewModel="True"
+    NavigationPage.HasNavigationBar="False"
+    Title="Master">
+    <StackLayout>
+        <ListView
+            x:Name="MenuItemsListView"
+            ItemsSource="{Binding MenuItems}"
+            SeparatorVisibility="None"
+            HasUnevenRows="true">
+            <ListView.Header>
+                <Grid BackgroundColor="Tomato">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Text="Prism Sample"
+                        FontSize="Large"
+                        Style="{DynamicResource SubtitleStyle}"
+                        TextColor="White" />
+                </Grid>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout
+                            Padding="15,10"
+                            HorizontalOptions="FillAndExpand">
+                            <Label
+                                Text="{Binding Title}"
+                                d:Text="{Binding .}"
+                                FontSize="24"
+                                VerticalTextAlignment="Center"
+                                VerticalOptions="FillAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
