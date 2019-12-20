@@ -16,6 +16,7 @@ namespace PrismSample
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterForNavigation<StartupPage, StartupViewModel>();
             containerRegistry.RegisterForNavigation<MyMasterPage, MyMasterPageViewModel>();
             containerRegistry.RegisterForNavigation<MyMasterPageMaster, MyMasterPageMasterViewModel>();
             containerRegistry.RegisterForNavigation<RootTabbedPage>();
@@ -32,7 +33,7 @@ namespace PrismSample
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync("RootTabbedPage");
+            NavigationService.NavigateAsync("StartupPage");
         }
     }
 }
