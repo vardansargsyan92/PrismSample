@@ -13,7 +13,7 @@ namespace PrismSample.ViewModels
         }
 
         public ICommand NavigateCommand { get; }
-
+                                                                                                  
         #region Command
 
         private class NavigateToPage5Command : ICommand
