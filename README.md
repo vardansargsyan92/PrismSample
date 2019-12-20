@@ -3,7 +3,7 @@
 # Xamarin forms 
 # Master details page
 # Tabbed Page
-# Xamaein.UWP
+# Xamain.UWP
 # Xamarin.IOS
 
 Sample app for using prism navigation. App includes Master details page inside tabbed page 
