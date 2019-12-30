@@ -8,7 +8,8 @@
     xmlns:mvvm="http://prismlibrary.com"
     mc:Ignorable="d"
     mvvm:ViewModelLocator.AutowireViewModel="True"
-    NavigationPage.HasNavigationBar="False"
+    NavigationPage.HasNavigationBar="true"
+    Title="Page 4"
     BackgroundColor="DarkGoldenrod">
     <ContentPage.Content>
         <StackLayout
