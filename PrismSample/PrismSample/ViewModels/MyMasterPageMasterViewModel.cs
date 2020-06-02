@@ -1,10 +1,11 @@
 ﻿using System.Collections.ObjectModel;
 using Prism.Mvvm;
+using Prism.Navigation;
 using PrismSample.Pages;
 
 namespace PrismSample.ViewModels
 {
-    public class MyMasterPageMasterViewModel : BindableBase
+    public class MyMasterPageMasterViewModel : BindableBase,INavigatedAware
     {
         public MyMasterPageMasterViewModel()
         {
@@ -18,5 +19,15 @@ namespace PrismSample.ViewModels
         }
 
         public ObservableCollection<MyMasterPageMasterMenuItem> MenuItems { get; }
+      
+        public void OnNavigatedFrom(INavigationParameters parameters)
+        {
+        
+        }
+
+        public void OnNavigatedTo(INavigationParameters parameters)
+        {
+        
+        }
     }
 }

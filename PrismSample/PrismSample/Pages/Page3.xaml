@@ -5,13 +5,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mvvm="http://prismlibrary.com"
     mc:Ignorable="d"
+    mvvm:ViewModelLocator.AutowireViewModel="True"
     NavigationPage.HasNavigationBar="False"
     BackgroundColor="Purple">
     <ContentPage.Content>
         <StackLayout>
             <Label
-                Text="Page 3"
+                Text="{Binding PageTitle}"
                 FontSize="Large"
                 TextColor="White"
                 HorizontalOptions="CenterAndExpand"

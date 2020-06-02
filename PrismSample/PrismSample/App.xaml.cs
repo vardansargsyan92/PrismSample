@@ -13,17 +13,16 @@ namespace PrismSample
         {
         }
 
-
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<StartupPage, StartupViewModel>();
             containerRegistry.RegisterForNavigation<MyMasterPage, MyMasterPageViewModel>();
             containerRegistry.RegisterForNavigation<MyMasterPageMaster, MyMasterPageMasterViewModel>();
             containerRegistry.RegisterForNavigation<RootTabbedPage>();
-            containerRegistry.RegisterForNavigation<MainPage>();
-            containerRegistry.RegisterForNavigation<Page1>();
-            containerRegistry.RegisterForNavigation<Page2>();
-            containerRegistry.RegisterForNavigation<Page3>();
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<Page1, Page1ViewModel>();
+            containerRegistry.RegisterForNavigation<Page2, Page2ViewModel>();
+            containerRegistry.RegisterForNavigation<Page3, Page3ViewModel>();
             containerRegistry.RegisterForNavigation<Page4, Page4ViewModel>();
             containerRegistry.RegisterForNavigation<Page5, Page5ViewModel>();
             containerRegistry.RegisterForNavigation<Page6, Page6ViewModel>();
