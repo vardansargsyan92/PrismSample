@@ -10,7 +10,7 @@ namespace PrismSample.Pages
         {
             InitializeComponent();
 
-            ChangeCurrentPage();
+            //ChangeCurrentPage();
             
         }
 
