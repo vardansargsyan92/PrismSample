@@ -144,13 +144,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Prism.Core">
-      <Version>8.0.0.1909</Version>
+      <Version>7.2.0.1422</Version>
     </PackageReference>
     <PackageReference Include="Prism.Forms">
-      <Version>8.0.0.1909</Version>
+      <Version>7.2.0.1422</Version>
     </PackageReference>
     <PackageReference Include="Prism.Unity.Forms">
-      <Version>8.0.0.1909</Version>
+      <Version>7.2.0.1422</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.1874" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.11" />

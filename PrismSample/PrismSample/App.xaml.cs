@@ -16,8 +16,8 @@ namespace PrismSample
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<StartupPage, StartupViewModel>();
-            containerRegistry.RegisterForNavigation<MyMasterPage, MyMasterPageViewModel>();
-            containerRegistry.RegisterForNavigation<MyMasterPageMaster, MyMasterPageMasterViewModel>();
+            containerRegistry.RegisterForNavigation<MyFlyOutPage, MyMasterPageViewModel>();
+            containerRegistry.RegisterForNavigation<MyFlyOutMenuPage, MyMasterPageMasterViewModel>();
             containerRegistry.RegisterForNavigation<RootTabbedPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<Page1, Page1ViewModel>();

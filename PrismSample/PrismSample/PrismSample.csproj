@@ -11,18 +11,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Prism.Core" Version="8.0.0.1909" />
-    <PackageReference Include="Prism.Forms" Version="8.0.0.1909" />
-    <PackageReference Include="Prism.Unity.Forms" Version="8.0.0.1909" />
+    <PackageReference Include="Prism.Core" Version="7.2.0.1422" />
+    <PackageReference Include="Prism.Forms" Version="7.2.0.1422" />
+    <PackageReference Include="Prism.Unity.Forms" Version="7.2.0.1422" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.1874" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Pages\MyMasterPage.xaml">
+    <Compile Update="Pages\MyFlyOutPage.xaml.cs">
+      <DependentUpon>MyFlyOutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\MyFlyOutMenuPage.xaml.cs">
+      <DependentUpon>MyFlyOutMenuPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Pages\MyFlyOutPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\MyMasterPageMaster.xaml">
+    <EmbeddedResource Update="Pages\MyFlyOutMenuPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\Page1.xaml">

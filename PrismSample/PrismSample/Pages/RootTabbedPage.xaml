@@ -8,7 +8,7 @@
     <!--  Pages can be added as references or inline  -->
     <NavigationPage Title="Master">
         <x:Arguments>
-            <pages:MyMasterPage />
+            <pages:MyFlyOutPage />
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="Page 1">

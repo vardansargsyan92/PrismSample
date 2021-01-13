@@ -5,7 +5,7 @@ using Prism.Navigation;
 
 namespace PrismSample.ViewModels
 {
-    public class Page4ViewModel : BindableBase
+    public class Page4ViewModel : BindableBase, INavigatedAware
     {
         public Page4ViewModel(INavigationService navigationService)
         {
@@ -13,7 +13,7 @@ namespace PrismSample.ViewModels
         }
 
         public ICommand NavigateCommand { get; }
-                                                                                                  
+
         #region Command
 
         private class NavigateToPage5Command : ICommand
@@ -39,5 +39,13 @@ namespace PrismSample.ViewModels
         }
 
         #endregion
+
+        public void OnNavigatedFrom(INavigationParameters parameters)
+        {
+        }
+
+        public void OnNavigatedTo(INavigationParameters parameters)
+        {
+        }
     }
 }

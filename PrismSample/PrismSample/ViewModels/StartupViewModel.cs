@@ -44,7 +44,7 @@ namespace PrismSample.ViewModels
             {
                 await Task.Delay(2000);
                 //Root is MasterDetail Page
-                //await _navigationService.NavigateAsync("/MyMasterPage/NavigationPage/MainPage");
+                //await _navigationService.NavigateAsync("/MyFlyOutPage/NavigationPage/MainPage");
                 
                 //Root is TabbedPage which has a MasterDetailPage child 
                 await _navigationService.NavigateAsync("RootTabbedPage");

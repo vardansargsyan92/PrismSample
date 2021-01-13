@@ -4,11 +4,11 @@ using Xamarin.Forms.Xaml;
 namespace PrismSample.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MyMasterPageMaster : ContentPage
+    public partial class MyFlyOutMenuPage
     {
         public ListView ListView;
 
-        public MyMasterPageMaster()
+        public MyFlyOutMenuPage()
         {
             InitializeComponent();
 

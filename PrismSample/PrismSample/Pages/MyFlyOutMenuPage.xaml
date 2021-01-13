@@ -1,22 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="PrismSample.Pages.MyMasterPageMaster"
+    x:Class="PrismSample.Pages.MyFlyOutMenuPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mvvm="http://prismlibrary.com"
+    xmlns:pages="clr-namespace:PrismSample.Pages;assembly=PrismSample"
     x:Name="This"
-    mc:Ignorable="d"
     mvvm:ViewModelLocator.AutowireViewModel="True"
     NavigationPage.HasNavigationBar="False"
     Title="Master">
     <StackLayout>
         <ListView
             x:Name="MenuItemsListView"
-            ItemsSource="{Binding MenuItems}"
             SeparatorVisibility="None"
             HasUnevenRows="true">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type pages:FlyOutItem}">
+                    <pages:FlyOutItem
+                        Title="Main Page"
+                        PageType="{x:Type pages:MainPage}" />
+                    <pages:FlyOutItem
+                        Title="Page 4"
+                        PageType="{x:Type pages:Page4}" />
+                    <pages:FlyOutItem
+                        Title="Page 5"
+                        PageType="{x:Type pages:Page5}" />
+                    <pages:FlyOutItem
+                        Title="Page 6"
+                        PageType="{x:Type pages:Page6}" />
+                </x:Array>
+            </ListView.ItemsSource>
             <ListView.Header>
                 <Grid BackgroundColor="Tomato">
                     <Grid.ColumnDefinitions>
@@ -43,11 +56,11 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout
+                            x:DataType="pages:FlyOutItem"
                             Padding="15,10"
                             HorizontalOptions="FillAndExpand">
                             <Label
                                 Text="{Binding Title}"
-                                d:Text="{Binding .}"
                                 FontSize="24"
                                 VerticalTextAlignment="Center"
                                 VerticalOptions="FillAndExpand" />

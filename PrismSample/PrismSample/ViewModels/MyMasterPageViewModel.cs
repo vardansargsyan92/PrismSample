@@ -5,7 +5,7 @@ using Prism.Navigation;
 
 namespace PrismSample.ViewModels
 {
-    public class MyMasterPageViewModel : BindableBase,INavigatedAware
+    public class MyMasterPageViewModel : BindableBase, INavigatedAware
     {
         public MyMasterPageViewModel(INavigationService navigationService)
         {
@@ -19,7 +19,6 @@ namespace PrismSample.ViewModels
         private class NavigateToCommand : ICommand
         {
             private readonly INavigationService _navigationService;
-
 
             public NavigateToCommand(INavigationService navigationService)
             {
