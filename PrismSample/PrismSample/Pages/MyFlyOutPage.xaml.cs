@@ -11,7 +11,7 @@ namespace PrismSample.Pages
         public MyFlyOutPage()
         {
             InitializeComponent();
-            FlyOutPage.ListView.ItemSelected += ListView_ItemSelected;
+            FlyOutMenuPage.ListView.ItemSelected += ListView_ItemSelected;
         }
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

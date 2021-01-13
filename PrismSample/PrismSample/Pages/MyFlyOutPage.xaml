@@ -11,7 +11,7 @@
     mvvm:ViewModelLocator.AutowireViewModel="True"
     NavigationPage.HasNavigationBar="False">
     <FlyoutPage.Flyout>
-        <pages:MyFlyOutMenuPage x:Name="FlyOutPage" />
+        <pages:MyFlyOutMenuPage x:Name="FlyOutMenuPage" />
     </FlyoutPage.Flyout>
     <FlyoutPage.Detail>
         <NavigationPage>
