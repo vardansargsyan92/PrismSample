@@ -21,9 +21,10 @@ namespace PrismSample.Pages
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var item = e.SelectedItem as MyMasterPageMasterMenuItem;
-            if (item == null)
+            if (!(e.SelectedItem is MyMasterPageMasterMenuItem item))
+            {
                 return;
+            }
 
             _viewModel.NavigateCommand.Execute(item.Title);
             IsPresented = false;

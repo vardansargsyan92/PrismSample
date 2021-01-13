@@ -43,7 +43,11 @@ namespace PrismSample.ViewModels
             public async void Execute(object parameter)
             {
                 await Task.Delay(2000);
-                await _navigationService.NavigateAsync("NavigationPage/RootTabbedPage");
+                //Root is MasterDetail Page
+                //await _navigationService.NavigateAsync("/MyMasterPage/NavigationPage/MainPage");
+                
+                //Root is TabbedPage which has a MasterDetailPage child 
+                await _navigationService.NavigateAsync("RootTabbedPage");
             }
 
             public event EventHandler CanExecuteChanged;

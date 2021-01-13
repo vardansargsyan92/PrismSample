@@ -9,7 +9,8 @@
     mc:Ignorable="d"
     mvvm:ViewModelLocator.AutowireViewModel="True"
     Title="Main Page"
-    NavigationPage.HasNavigationBar="True">
+    NavigationPage.HasNavigationBar="True"
+    BackgroundColor="LightGray">
 
     <StackLayout>
         <!--  Place new controls here  -->

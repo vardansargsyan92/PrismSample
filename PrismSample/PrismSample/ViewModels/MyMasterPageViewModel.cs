@@ -33,7 +33,7 @@ namespace PrismSample.ViewModels
 
             public async void Execute(object parameter)
             {
-                await _navigationService.NavigateAsync($"NavigationPage/{parameter}");
+                await _navigationService.NavigateAsync(new Uri($"NavigationPage/{parameter}", UriKind.Relative));
             }
 
             public event EventHandler CanExecuteChanged;

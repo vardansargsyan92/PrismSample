@@ -1,10 +1,9 @@
-﻿using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms.Xaml;
 
 namespace PrismSample.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StartupPage : ContentPage
+    public partial class StartupPage
     {
         public StartupPage()
         {
